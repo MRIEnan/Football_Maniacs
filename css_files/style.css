@@ -1,0 +1,610 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* common style or utilities */
+
+.full-width{
+    width: 100%;
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1160px;
+}
+
+.button{
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    background: #E02C6D;
+    color: #ffffff;
+    width: 168px;
+}
+
+
+/* ----------------------------container one starts */
+
+/* animation  starts  */
+.anim-icon{
+    position: absolute;
+    width: 100%;
+    height: 777px;
+    /* background: red; */
+}
+
+#ball{
+    transform: scale(.3);
+    position: relative;
+    top: 120px;
+    left: 584px;
+    transform: scale(0);
+}
+.anim-icon:hover #ball{
+    animation: animate 1s 300ms linear ;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(.3);
+        top: 120px;
+        left: 584px;
+    }
+    10%{
+        top:-30px;
+        left: 584px;
+    }
+    40%{
+        top: -30px;
+        left: 1044px;
+        transform: scale(.6);
+    }
+    70%{
+        left: 1044px;
+        top: 460px;
+        transform: scale(.4);
+    }
+    90%{
+        top: 460px;
+        left: 584px;
+        transform: scale(.3);
+    }
+    100%{
+        top: 120px;
+        left: 584px;
+    }
+}
+
+/* animation ends  */
+
+
+
+/* ---------------------- */
+
+.inner-container-one{
+    background: #2D25A0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 134px 19px 86px 1px;
+    margin-bottom: 70px;
+}
+
+.inner-container-one-left h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+
+
+.button a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ----------------------------container one ends  */
+
+/* ----------------------------container two starts */
+
+
+.inner-containter-two{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 155px;
+}
+
+
+.player{
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.player-container img{
+    height: 256px;
+    width: 300px;
+}
+
+.player-container h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+
+.player-container p{
+    margin-top: -2px;
+    margin-bottom: 40px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+
+/* ----------------------------container two ends  */
+
+/* ----------------------------container three starts  */
+
+.inner-container-three{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner-container-three-left{
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 25px;
+    width: 486px;
+    height: 309px; 
+}
+
+.inner-container-three-left h3{
+    color: #0A0826;
+    font-size: 48px;
+    font-weight: 700px;
+    margin: 0px;
+    line-height: 50px;
+}
+
+.inner-container-three-left p{
+    font-size: 16px;
+}
+
+.inner-container-three-left .para{
+    width: 404px;
+    height: 113px;
+    margin-bottom: 0px;
+}
+.inner-container-three-left .para p{
+    color: #6C6C6C;
+}
+.inner-container-three-left .button{
+    margin-top: 24px;
+    padding: 14px 2px;
+}
+
+
+.inner-container-three-right img{
+    height: 427px;
+    width: 567px;
+}
+
+
+
+/* container three ends  */
+
+/* container four starts */
+
+.top-newses{
+    display: inline-block;
+    position: relative;
+    width: 1160px;
+    top: 60px;
+}
+
+.top-newses::before{
+    content: "Top News";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #0A0826;
+}
+
+.news-container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.news{
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.news iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* container four ends  */
+
+/* container five starts */
+
+
+.schedule-container{
+    position: relative;
+    display: inline-block;
+    /* padding: 20px; */
+    margin-top: 60px;
+    width: 1160px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.schedule-container::before{
+    content: "Copa Schedule";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #0A0826;
+}
+.schedule-inner-container{
+    display: flex;
+    width: 1120px;
+    justify-content: center;
+}
+.schedule{
+    width: 667px;
+    overflow:hidden;
+}
+
+.schedule iframe{
+    height: 820px;
+    width: 100%;
+}
+
+/* container five ends  */
+
+/* container six starts  */
+
+.membership-form-container{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    width: 1060px;
+}
+
+.membership-container{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    width: 1040px;
+    height: 340px;
+}
+
+.membership-form{
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 80px;
+    transition-duration: 1s;
+    border: 3px solid #18191f;
+    width: 460px;
+    flex-direction: column;
+}
+.membership-form:hover{
+    transition: all 1s linear;
+    background: #2D25a0;
+}
+
+.membership-form::before{
+    content: "Be A Member";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #E02C6D;
+}
+.membership-form input{
+    position: relative;
+    display: inline-block;
+    background: #E02C6D;
+    margin-bottom: 10px;
+    border: 2px solid #0A0826;
+    font-size: 16px;
+    border-radius: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+
+#membership-submit{
+    font-size: 20px;
+    height: 80px;
+}
+
+.membership-form input::placeholder{
+    padding: 20px 40px;
+    color: #E02C6D;
+    background: white;
+}
+
+
+.membership-form input:focus::placeholder{
+    position: absolute;
+    transform: translateX(500px);
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
+    width: 500px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    background: #ffffff;
+}
+
+/* container six ends  */
+
+
+.footer-box{
+    position: relative;
+    padding-top: 20px;
+    display: block;
+}
+
+.inner-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.mainfooter-box{
+    width: 483px;
+    height: 213px;
+    margin-bottom: 63px;
+}
+
+.footer-banner-image{
+    height: 110px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+}
+
+.social-icons img{
+    height: 32px;
+    width: 32px;
+}
+
+.mainfooter-box p{
+    position: relative;
+    margin-bottom: 67px;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+
+/* footer container ends  */
+
+
+
+
+
+
+
+
+
+/* -----------------------media-------------- */
+/*----------- Mobile device -----------
+ -------------- 688px --------------- */
+
+@media only screen and (max-width: 688px){
+    
+
+    .full-width{
+        width: 0;
+    }
+    .container{
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        width: 330px;
+    }
+
+    .anim-icon{
+        height: 0px;
+        width: 0;
+        display: none;
+        animation: none;
+    }
+
+    .anim-icon #ball{
+        display: none;
+    }
+
+    
+
+    .inner-container-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        padding: 0px 15px 0px 15px;
+        margin-bottom: 0px;
+    }
+
+
+    .inner-container-one-left h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .inner-container-one-right{
+        padding-bottom: 60px;
+    }
+
+    .inner-container-one-right img{
+        width: 329px;
+        height: 259px;
+        margin-top: 50px;
+    }
+    
+    /*container two */
+
+
+    .inner-containter-two{
+        margin-top: 13px;
+        display: flex;
+        background: #fff;
+        width: 360px;
+        padding:  0px 15px 15px 15px;
+        justify-content: center;
+    }
+    .player{
+        width: 330px;
+        display: inline-block;
+        width: 300px;
+        padding: 10px 15px;
+        margin: 0 0 24px 0;
+    }
+
+    .players-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin:0  0 0px 0;
+    }
+    
+    /* container three  */
+
+
+    .inner-container-three{
+        flex-direction: column;
+        margin-top: 0px;
+       
+    }
+    .inner-container-three-left{
+        height: 331px;
+        width: 329px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .inner-container-three-left h3{
+        font-size: 30px;
+    }
+    .inner-container-three-left .para{
+        width: 329px;
+        height: 140px;
+        
+    }
+    .inner-container-three-right{
+        display: flex;
+        justify-content: center;
+    }
+    .inner-container-three-right img{
+        margin-top: 30px;
+        width: 328px;
+        height: 248px;
+        margin-bottom: 45px;
+    }
+    /* container four  */
+
+    .top-newses{
+        width: 330px;
+    }
+
+    .news-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* container five  */
+
+    .schedule-inner-container{
+        width: 320px;
+    }
+
+    /* container six  */
+
+    .membership-form-container{
+        width: 360px;
+        padding: 0px;
+    }
+
+    .membership-container{
+        width: 340px;
+        padding: 0px;
+    }
+
+    .membership-form{
+        width: 330px;
+        padding: 10px;
+        margin-left: 20px;
+        border: none;
+    }
+
+    .membership-form::before{
+        font-size: 24px;
+        justify-content: center;
+        width: 330px;
+    }
+
+
+    /* footer container */
+
+    .mainfooter-box{
+        width: 314px;  
+    }
+
+    .footer-banner-image{
+        /* width: 314px; */
+        height: 43px;
+        margin-left: 70px;
+    }
+
+}   
+
+    
